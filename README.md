@@ -7,10 +7,6 @@ Join the future of fundraising with our innovative Web3 community-based crowdfun
 
 ![image](https://github.com/aadarsh-nagrath/Web3.0_App/assets/92307537/74d97625-5d89-4db5-93ef-10925b557a1b)
 
-## Documentation
-
-[Documentation /Research Papers](https://github.com/aadarsh-nagrath/Web3.0_App/tree/main/docs)
-
 ## Note
 
 There will be many Folders here, so make sure you run the project and install the necessary dependencies inside the correct directory.
@@ -83,12 +79,3 @@ Once the smart contract is deployed and you have the contract address:
 2. Locate the relevant file where the contract address is being used (e.g., in a JavaScript file). You can find that [here](https://github.com/aadarsh-nagrath/Web3.0_App/blob/main/client/src/context/index.jsx)
 
 3. Update the contract address in the file with the address of the deployed smart contract on the third web.
-   https://github.com/aadarsh-nagrath/Web3.0_App/blob/615e303ee446a95cca8299d119c8c5f4a52745d1/client/src/context/index.jsx#L9
-
-## Usage
-
-Provide instructions and examples on how to interact with your smart contract or use it in your application.
-
-## License
-
-This project is licensed under the [MIT License] - see the [LICENSE](https://github.com/aadarsh-nagrath/Web3.0_App/blob/main/LICENSE) file for details.
