@@ -1,11 +1,11 @@
 
 # Web3 Community Based Crowd Funding Platform with Block-Chain Transactions
-
-![image](https://github.com/aadarsh-nagrath/Web3.0_App/assets/92307537/62998b20-4258-42f7-a030-220e7a8359e4)
+![homepg](https://github.com/shambhaviijhaa/CoinCause-Crowdfunding/assets/89500052/65de9b88-263d-4e70-8943-5595666df7b5)
 
 Join the future of fundraising with our innovative Web3 community-based crowdfunding platform! Experience the power of blockchain transactions, where transparency and security come together to revolutionize the way you support projects. Be part of a global community that connects creators and backers seamlessly, ensuring trust and accountability at every step. Empower ideas, fuel dreams, and reshape crowdfunding on a platform designed for the modern era.
 
-![image](https://github.com/aadarsh-nagrath/Web3.0_App/assets/92307537/74d97625-5d89-4db5-93ef-10925b557a1b)
+![campaigns](https://github.com/shambhaviijhaa/CoinCause-Crowdfunding/assets/89500052/916cacaa-a8f2-4ea8-9d0e-83fdb89881cf)
+
 
 ## Note
 
