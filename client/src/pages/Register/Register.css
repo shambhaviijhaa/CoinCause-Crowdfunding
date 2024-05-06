@@ -44,6 +44,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.input{
+  height: 50px;
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -81,7 +85,7 @@ body {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 li{
@@ -150,15 +154,14 @@ li{
       margin: auto;
       justify-content: space-between;
       border-radius: 10px;
-      background: hsla(276, 65%, 25%, 0.564);
-  
-      
+      background: hsla(276, 65%, 25%, 0.564);      
     }
   }
 
   .formDiv{
-    gap: -1rem;
+    gap: 2rem;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .headerDiv{
@@ -168,7 +171,8 @@ li{
 
   form{
     margin-top: -20px;
-    gap: 0.2rem;
+    margin-bottom: -50px;
+    gap: 0rem;
     transform: translateY(-1.8rem);
   }
 
@@ -191,4 +195,8 @@ li{
     .b2{
       margin-left: -40px;
     }
+  }
+
+  .btn_{
+    margin-left: 40px;
   }

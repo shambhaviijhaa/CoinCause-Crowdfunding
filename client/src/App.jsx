@@ -43,12 +43,14 @@ import Donor from "./pages/Donor";
 import Login from "./pages/Login/Login";
 import Org from "./pages/Org";
 import Register from "./pages/Register/Register";
+import Landing from "./pages/Landing/Landing";
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/donor/*" element={<Donor />} />
         <Route path="/org/*" element={<Org />} />

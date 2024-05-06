@@ -110,7 +110,7 @@ li{
   transition: .3s ease;
 }
 
-.btn .icon{
+.icon{
   margin-left: .5rem;
 }
 
@@ -207,7 +207,6 @@ video{
         border-radius: 10px;
         font-weight: 400;
         transition: .3s ease;
-        margin-left: 8px;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.628);
@@ -219,7 +218,7 @@ video{
 
 .formDiv{
     flex-basis: 30%;
-    margin: auto;
+    margin: 50px auto;
     flex-direction: column;
     gap: 1.5rem;
     transform: translateY(-1rem);
@@ -250,6 +249,7 @@ video{
             outline: none;
             border: none;
             width: 200px;
+            
         }
 
         label{
@@ -277,7 +277,7 @@ video{
     border-radius: 10px;
     font-weight: 400;
     transition: .3s ease;
-    margin: auto 0.5rem;
+    margin: auto;
     align-items: center;
 
     &:hover{
@@ -286,6 +286,10 @@ video{
         font-size: 15px;
     }
     
+}
+
+.btn_{
+  margin-left: 20px;
 }
 
 .forgotPassword{
@@ -304,6 +308,6 @@ video{
 }
 
 .buttons{
-    justify-content: space-between;
+    justify-content:center;
 }
 

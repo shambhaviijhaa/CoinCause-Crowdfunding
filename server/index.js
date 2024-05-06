@@ -37,46 +37,69 @@ app.post('/register', (req, res) =>{
     })
 })
 
-app.post('/logindonor', (req, res)=>{
-    const sentLoginUserName = req.body.LoginUserName
-    const sentLoginPassword = req.body.LoginPassword
-    const sentLoginRegType = req.body.LoginRegType
+app.post('/login', (req, res) => {
+    const sentLoginUserName = req.body.LoginUserName;
+    const sentLoginPassword = req.body.LoginPassword;
+    const sentLoginRegType = req.body.LoginRegType;
 
-    const SQL = 'SELECT * FROM users WHERE username=? && password=? && type=?'
-    const Values = [sentLoginUserName, sentLoginPassword, sentLoginRegType]
+    const SQL = 'SELECT * FROM users WHERE username=? AND password=? AND type=?';
+    const Values = [sentLoginUserName, sentLoginPassword, sentLoginRegType];
 
-    db.query(SQL, Values, (err, results)=>{
-        if(err){
-            res.send(err)
+    db.query(SQL, Values, (err, results) => {
+        if (err) {
+            res.send(err);
+        } else {
+            if (results.length > 0) {
+                res.send(results);
+            } else {
+                console.log("Credentials don't match");
+                res.send({ message: "Credentials don't match" });
+            }
         }
-        if(results.length > 0){
-            res.send(results)
-        }
-        else{
-            console.log("Credentials don't match")
-            res.send({message: "Credentials don't match"})
-        }
-    })
-})
+    });
+});
 
-app.post('/loginorg', (req, res)=>{
-    const sentLoginUserName = req.body.LoginUserName
-    const sentLoginPassword = req.body.LoginPassword
-    const sentLoginRegType = req.body.LoginRegType
 
-    const SQL = 'SELECT * FROM users WHERE username=? && password=? && type=?'
-    const Values = [sentLoginUserName, sentLoginPassword, sentLoginRegType]
+// app.post('/logindonor', (req, res)=>{
+//     const sentLoginUserName = req.body.LoginUserName
+//     const sentLoginPassword = req.body.LoginPassword
+//     const sentLoginRegType = req.body.LoginRegType
 
-    db.query(SQL, Values, (err, results)=>{
-        if(err){
-            res.send(err)
-        }
-        if(results.length > 0){
-            res.send(results)
-        }
-        else{
-            console.log("Credentials don't match")
-            res.send({message: "Credentials don't match"})
-        }
-    })
-})
+//     const SQL = 'SELECT * FROM users WHERE username=? && password=? && type=?'
+//     const Values = [sentLoginUserName, sentLoginPassword, sentLoginRegType]
+
+//     db.query(SQL, Values, (err, results)=>{
+//         if(err){
+//             res.send(err)
+//         }
+//         if(results.length > 0){
+//             res.send(results)
+//         }
+//         else{
+//             console.log("Credentials don't match")
+//             res.send({message: "Credentials don't match"})
+//         }
+//     })
+// })
+
+// app.post('/loginorg', (req, res)=>{
+//     const sentLoginUserName = req.body.LoginUserName
+//     const sentLoginPassword = req.body.LoginPassword
+//     const sentLoginRegType = req.body.LoginRegType
+
+//     const SQL = 'SELECT * FROM users WHERE username=? && password=? && type=?'
+//     const Values = [sentLoginUserName, sentLoginPassword, sentLoginRegType]
+
+//     db.query(SQL, Values, (err, results)=>{
+//         if(err){
+//             res.send(err)
+//         }
+//         if(results.length > 0){
+//             res.send(results)
+//         }
+//         else{
+//             console.log("Credentials don't match")
+//             res.send({message: "Credentials don't match"})
+//         }
+//     })
+// })

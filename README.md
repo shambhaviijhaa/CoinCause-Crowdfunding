@@ -1,25 +1,18 @@
 
-# Web3 Community Based Crowd Funding Platform with Block-Chain Transactions
+# CoinCause: CrowdFunding Platform Using Blockchain
 
-![image](https://github.com/aadarsh-nagrath/Web3.0_App/assets/92307537/62998b20-4258-42f7-a030-220e7a8359e4)
+![image](https://github.com/taanyatarun/CoinCause/blob/main/client/src/README_assets/11.png)
 
 Join the future of fundraising with our innovative Web3 community-based crowdfunding platform! Experience the power of blockchain transactions, where transparency and security come together to revolutionize the way you support projects. Be part of a global community that connects creators and backers seamlessly, ensuring trust and accountability at every step. Empower ideas, fuel dreams, and reshape crowdfunding on a platform designed for the modern era.
 
-![image](https://github.com/aadarsh-nagrath/Web3.0_App/assets/92307537/74d97625-5d89-4db5-93ef-10925b557a1b)
+![image](https://github.com/taanyatarun/CoinCause/blob/main/client/src/README_assets/14.png)
 
-## Documentation
 
-[Documentation /Research Papers](https://github.com/aadarsh-nagrath/Web3.0_App/tree/main/docs)
+![image](https://github.com/taanyatarun/CoinCause/blob/main/client/src/README_assets/16.png)
 
 ## Note
 
 There will be many Folders here, so make sure you run the project and install the necessary dependencies inside the correct directory.
-
-For example -
-Our Project Starts inside start so,
-
-E:\github\Web3.0_App> cd start  
-E:\github\Web3.0_App\start>
 
 
 ## Deployment
@@ -44,7 +37,7 @@ Below are the steps to create a `.env` file, install dependencies, deploy a smar
 
 After creating the `.env` file, follow these steps to install dependencies and deploy the smart contract.
 
-1. Navigate to the `client` directory and the `web3` directory using the command line.
+1. Navigate to the `client` directory, `server` directory and the `web3` directory using the command line.
 
    ```bash
    cd client
@@ -54,7 +47,11 @@ After creating the `.env` file, follow these steps to install dependencies and d
    cd web3
    ```
 
-2. In both the `client` and `web3` directories, run the following command to install the necessary dependencies:
+   ```bash
+   cd server
+   ```
+
+2. In both the `client`, `server` and `web3` directories, run the following command to install the necessary dependencies:
 
    ```bash
    npm install
@@ -80,15 +77,10 @@ Once the smart contract is deployed and you have the contract address:
 
 1. Open the `client` directory.
 
-2. Locate the relevant file where the contract address is being used (e.g., in a JavaScript file). You can find that [here](https://github.com/aadarsh-nagrath/Web3.0_App/blob/main/client/src/context/index.jsx)
+2. Locate the relevant file where the contract address is being used (e.g., in a JavaScript file).
 
 3. Update the contract address in the file with the address of the deployed smart contract on the third web.
-   https://github.com/aadarsh-nagrath/Web3.0_App/blob/615e303ee446a95cca8299d119c8c5f4a52745d1/client/src/context/index.jsx#L9
 
 ## Usage
 
 Provide instructions and examples on how to interact with your smart contract or use it in your application.
-
-## License
-
-This project is licensed under the [MIT License] - see the [LICENSE](https://github.com/aadarsh-nagrath/Web3.0_App/blob/main/LICENSE) file for details.

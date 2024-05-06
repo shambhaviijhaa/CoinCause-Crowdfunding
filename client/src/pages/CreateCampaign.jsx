@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ethers } from 'ethers';
 
 import { useStateContext } from '../context';
 import { money } from '../assets';
 import { CustomButton, FormField, Loader } from '../components';
+import ErrorPopup from '../components/ErrorPopup';
 import { checkIfImage } from '../utils';
 
 const CreateCampaign = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
   const { createCampaign } = useStateContext();
   const [form, setForm] = useState({
     name: '',
@@ -34,15 +36,20 @@ const CreateCampaign = () => {
         setIsLoading(false);
         navigate('/org');
       } else {
-        alert('Provide valid image URL')
+        setError('Provide valid image URL');
         setForm({ ...form, image: '' });
       }
     })
   }
 
+  const closeErrorPopup = () => {
+    setError('');
+  };
+
   return (
     <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
       {isLoading && <Loader />}
+      {error && <ErrorPopup message={error} onClose={closeErrorPopup} />}
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[30px] text-[25px] leading-[38px] text-white">Start a Campaign, Become Recipient Of CrowdFund 🥳</h1>
       </div>
@@ -117,4 +124,4 @@ const CreateCampaign = () => {
   )
 }
 
-export default CreateCampaign
+export default CreateCampaign;
