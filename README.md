@@ -1,14 +1,14 @@
 
 # CoinCause: CrowdFunding Platform Using Blockchain
 
+![11](https://github.com/shambhaviijhaa/CoinCause-Crowdfunding/assets/89500052/66434dd2-c0bf-4386-bdc2-2579b8aecf9c)
 
 
 Join the future of fundraising with our innovative Web3 community-based crowdfunding platform! Experience the power of blockchain transactions, where transparency and security come together to revolutionize the way you support projects. Be part of a global community that connects creators and backers seamlessly, ensuring trust and accountability at every step. Empower ideas, fuel dreams, and reshape crowdfunding on a platform designed for the modern era.
 
+![14](https://github.com/shambhaviijhaa/CoinCause-Crowdfunding/assets/89500052/1cdc6eaa-53a3-4b8c-bffb-ab90823e04fc)
 
-
-
-
+![16](https://github.com/shambhaviijhaa/CoinCause-Crowdfunding/assets/89500052/e66c7f26-1cfe-4112-80a2-0d2c0fe517aa)
 
 ## Note
 
