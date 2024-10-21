@@ -67,6 +67,14 @@ After creating the `.env` file, follow these steps to install dependencies and d
 
    Ensure your MetaMask private key is correctly configured in the `.env` file to sign the deployment transaction.
 
+   Here’s how you can include the secret key in your command:
+   
+      Obtain your secret key: You can get your secret key from the Thirdweb dashboard or from the service you're using.
+
+   Run the deploy command with the secret key:
+   ```bash
+      npx thirdweb@latest deploy -k <your-secret-key>
+   ```
    Follow the link that appears in the terminal and deploy the contract in the desired network. (Polygon or Ethereum).
 
    The deployment process will provide you with the contract address once it's successfully deployed.
