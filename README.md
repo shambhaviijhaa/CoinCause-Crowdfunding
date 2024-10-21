@@ -73,7 +73,7 @@ After creating the `.env` file, follow these steps to install dependencies and d
 
    Run the deploy command with the secret key:
    ```bash
-      npx thirdweb@latest deploy -k <your-secret-key>
+   npx thirdweb@latest deploy -k <your-secret-key>
    ```
    Follow the link that appears in the terminal and deploy the contract in the desired network. (Polygon or Ethereum).
 
@@ -93,11 +93,11 @@ Once the smart contract is deployed and you have the contract address:
 
 1. In client terminal:
  ```bash
-      npm run dev
-   ```
+ npm run dev
+ ```
 2. In server terminal:
 ```bash
-   node index.js
+node index.js
 ```
 
 ## Usage
