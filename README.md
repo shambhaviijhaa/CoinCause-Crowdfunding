@@ -89,6 +89,17 @@ Once the smart contract is deployed and you have the contract address:
 
 3. Update the contract address in the file with the address of the deployed smart contract on the third web.
 
+#### start the application:
+
+1. In client terminal:
+ ```bash
+      npm run dev
+   ```
+2. In server terminal:
+```bash
+   node index.js
+```
+
 ## Usage
 
 Provide instructions and examples on how to interact with your smart contract or use it in your application.
